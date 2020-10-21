@@ -2,11 +2,14 @@ package com.example.book.domain;
 
 import lombok.Data;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
 public class Taco {
+    private Long id;
     private String name;
-    private List<String> ingredients;
+    private List<Ingredient> ingredients;
+    private Date createdAt;
 
 }
